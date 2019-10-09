@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="自动化营销,营销自动化 ,邮件营销,短信营销,自动化邮件,精准营销,个性化营销,SMS营销,EMS营销,Xrewin"/> 
+    <meta name="description" content="Xrewin全国领先自动化营销提供商,为您提供营销自动化平台、专业的EDM营销、短信营销等服务，是自动化营销，电子邮件营销,短信营销提供商，助力企业节约成本、高速增长。"/> 
+    <title>易回眸-营销自动化平台-短信营销-邮件营销 Xrewin.com</title>
+    <link rel="stylesheet" type="text/css" href="/css/y-style.css" />
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="icon" href="/images/logo.ico" type="image/x-icon"/>
+</head>
+<body>
+        <header class="y-header ">
+    <div class="b-center">
+        <h1 class="header_logo">
+            <a href="/">
+                <img src="/images/logo.png" />
+            </a>
+        </h1>
+        <nav>
+            <ul class="sf-menu" id="example">
+                <li class="nav_item current" mark="automation">
+                    <a href="/automation" class="scope introduction">营销自动化</a>
+                    <span class="line"></span>
+                    <div class="nav_sub">
+                        <a href="/automation#autoFunction">智能分组</a>
+                        <div class="stand"></div>
+                        <a href="/automation#Personal">个性化</a>
+                        <div class="stand"></div>
+                        <a href="/automation#Flow">工作流</a>
+                        <div class="stand"></div>
+                        <a href="/automation#Report">智能报表</a>
+                        <div class="stand"></div>
+                        <a href="/automation#Smart">Web埋点</a>
+                        <div class="stand"></div>
+                        <a href="/automation#Marketing">营销互动</a>
+                    </div>
+                </li>
+                <li class="nav_item current" mark="email">
+                    <a href="/email" class="scope show">邮件营销</a>
+                    <span class="line"></span>
+                </li>
+
+                <li class="nav_item current" mark="note">
+                    <a href="/note" class="scope">短信营销</a>
+                    <span class="line"></span>
+                </li>
+                <li class="nav_item current" mark="about" mark="example">
+                    <a href="/about" class="scope">探索发现</a>
+                    <span class="line"></span>
+                    <div class="nav_sub">
+                        <a href="/about/example">成功案例</a>
+                        <div class="stand"></div>
+                        <a href="/about/form">产品演示</a>
+                        <div class="stand"></div>
+                        
+                        <a href="/api/_book/packetRequest.html">技术支持</a>
+                        <div class="stand"></div>
+                        <a href="/about">关于我们</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="tip" id="tip">
+            <div class="sign login">
+                <a class="scope">注册</a>
+            </div>
+            <div class="login">
+                <a class="scope" href="https://wx.xrewin.com/login">登录</a>
+            </div>
+            <div class="consult">
+                <a class="scope" href="/about/form">方案咨询</a>
+            </div>
+            <div class="phone">
+                <a class="scope" href="/about/form">
+                    <img src="/images/电话.png" /> 010-64429975
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="signIn">
+    <div class="right">
+        <h4 style="height: 5px;"><img class="zcerror" src="/images/error.png" /></h4>
+        <h4>一分钟注册 立即体验</h4>
+        <form id="zc" action="" method="post">
+            <div id="zcForm">
+                <div class="text">
+                    <input id="zccompany" type="" name="company" value="" placeholder="请输入公司名称" />
+                    <div class="zcicon">
+                        <img class="question" src="/images/question.png" />
+                        <div class="iconIntruct">只包含汉字及字母的公司名称</div>
+                    </div>
+                </div>
+                <div class="text phone_block">
+                    
+                    <input id="acmobileCode" class="code" type="" name="MobileCode" value="" placeholder="请输入手机号(注册成为您的用户名)" />
+                    
+                    
+                    <div class="zcicon">
+                        <img class="question" src="/images/question.png" />
+                        <div class="iconIntruct" style="width:200px;">只包含数字的11位正确手机号码</div>
+                    </div>
+                </div>
+                <div class="text phone_block">
+                    <input id="zccheckCode" class="random_code" type="" name="CheckCode" value="" placeholder="请填入随机码" />
+                    
+                    
+                    <div class="random">
+                        <img class="randomImg refresh_code" src="https://wellemail.com/Service/CheckCodeImage" />
+                        
+                    </div>
+                    
+                </div>
+                <div class="text phone_block">
+                    <input id="zcsms" type="" class="random_code" name="sms" value="" placeholder="请输入您收到的验证码" />
+                    <button class="signIn_code_button" type="button" value="">点击获取验证码</button>
+                    
+                </div>
+                <div class="text">
+                    <input id="zcpassword" type="password" name="Email" value="" class="password" placeholder="请设置您的登录密码" />
+                    <div class="zcicon">
+                        <img class="question" src="/images/question.png" />
+                        <div class="iconIntruct" style="width:294px;">必须包含字母，数字，字符中的两种或两种以上</div>
+                    </div>
+                </div>
+                <div class="text ">
+                    <input id="zcaffirm_password" type="password" name="Mobile" value="" class="affirm_password" placeholder="请再次输入您的密码" />
+                </div>
+                <div class="text ">
+                    <input id="zcaddr" type="" name="Mobile" value="" class="addr" placeholder="请输入您的正确邮箱地址(发送相应渠道激活码)" />
+                    <div class="zcicon">
+                        <img class="question" src="/images/question.png" />
+                        <div class="iconIntruct" style="width:252px;">我们将会给您的邮箱发送相应渠道激活码</div>
+                    </div>
+                </div>
+                <div class="explain" style="text-align: center;"> <input type="checkbox" class="weui-check">我已阅读并同意 <a href="/about/user-agreement">用户协议</a></div>
+                <div class="submit">
+                    <div class="signOrder">注册</div>
+                </div>
+                
+                <div class="explain" style="text-align: center;"><img style="width: 100px;margin:10px;"
+                        src="/images/xrewinCode.jpg" /></div>
+                        <div class="explain" style="text-align: center;"><img style="width:14px;margin-top: -2px;" src="/images/service.png" />
+                            您也可拨打客服电话：<a>010-64429975</a> 与我们取得联系</div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="sign_success">
+    <div>
+        <img src="/images/success.png" />
+        <span>注册成功</span>
+    </div>
+    <div>页面将在<span class="count_down down">3</span>秒之后跳转至系统</div>
+    <div class="tip">我们将在24小时内向您邮箱发送激活邮件</div>
+</div>
+<div class="mask-layer"></div>
+        <div class="y-agreement">
+    <div class="y-banner">
+        <div class="content">
+            <div class="top"></div>
+            <div class="agreement">
+                <h2 style="text-align: center;">易回眸 用户协议</h2>
+                <h5>一、定义</h5>
+                <div>
+                    <p>1、本站：在本协议中除非专门指明或声明，均指由 易回眸 软件有限公司(以下简称："易回眸")所有以及运营的网站，该网站包括 www.xrewin.com以及 易回眸
+                        的其他域名：在未经声明或特别指出的情况下，本站和 易回眸 属于同一主体。</p>
+                    <p>2、所有权以及相关的权利,在本服务条款中，除非专门指明或声明，均意味着：第一，所有权。第二，知识产权，包括但不限于著作权，专利权，商标权，商业秘密以及Known-how等所有智力成果所有权，第三，除上述权利之外的对物，信息及其载体和表现形式的使用，利用，传播，复制，发行，编辑，修改，处分等的权利。
+                    </p>
+                    <p>3、用户在本服务条款中，除非专门指明或声明，均包括会员和普通浏览者。</p>
+                    <p>4、会员，在本服务条款中，除非专门指明或声明，是指接受本服务协议的自然人，法人或其他组织。</p>
+                    <p>5、个人资料，在本服务条款中，除非专门指明或声明，均意味着：会员在本公司注册的内容，包括其后依据其身份资格登录后自由修改所填写的内容。</p>
+                </div>
+                <h5>二、权利声明</h5>
+                <div>
+                    <p>1、任何本站所发布的信息及/或其载体，及/或其表现形式，及/或服务，除以下情况之外，均独占性地属于 易回眸 所有：</p>
+                    <p>▪ 依据中华人民共和国的相关法律规定该信息及/或载体，及/或服务，不享有所有权以及与此相关的权利的；</p>
+                    <p>▪ 依据 易回眸 和其他主体之间的协议，合同，章程，由 易回眸 和其他主体共享，或 易回眸 转让或声明放弃的；</p>
+                    <p>▪ 依据 易回眸 具有法律效力的正式声明而放弃的。</p>
+                    <p>2、任何对本站享有的基于该信息及/或其载体，及/或其表现形式，及/或服务的权利的侵犯，均属于对本站权利的侵犯。</p>
+                </div>
+                <h5>三、会员资格的取得</h5>
+                <div>
+                    <p>本站将严格按照本站的服务条款，操作规则为用户提供相应的服务，本站的用户分为会员和普通浏览者两类。</p>
+                    <p>1、任何浏览者，均可以通过履行相应的登记手续，取得本站的确认，或应本站的邀请，成为本站的会员。</p>
+                    <p>2、用户通过国际互联网(INTERNET)在本站履行相应登记手续，在其按照本站所规定或指定的步骤或程序，向本站提交登记内容之后，自本站确认其登记内容并通知该用户之后，自动取得该资格。</p>
+                    <p>3、用户取得会员资格必须接受本服务条款。</p>
+                </div>
+                <h5>四、会员权利及其限制</h5>
+                <div>
+                    <p>1、会员的权利依据本站的业务流程享有和行使。</p>
+                    <p>2、会员所享有的权利应当受到以下限制，在以下范围内，会员不得就其享有的权利向/针对本站提出任何异议（包括但不限于投诉，诉讼，提起仲裁，提起调解等）：</p>
+                    <p>▪ 本站已经声明即将提供的权利或服务，但是基于本站的建设速度，程度以及规划，尚未提供的；</p>
+                    <p>▪ 根据本站制订的价格，费用，支付方式和期限，该会员所要求的权利或服务，已经超出了根据该会员业已缴纳的费用应当享有的权利或服务范围；</p>
+                    <p>▪ 易回眸 对本网站的网络服务不承担任何责任，即用户对网络服务的使用承担风险。易回眸 不保证服务一定会满足用户的使用要求，也不保证服务不会受中断，对服务的及时性，安全性，准确性也不作担保。
+                    </p>
+                </div>
+                <h5>五、会员资料</h5>
+                <div>
+                    <p>基于会员与本站之间的合作和信任，本站有权认为：</p>
+                    <p>1、会员在本站，按照本站的规则和程序所填写的个人资料必须是详尽,，准确，及时和完整的；</p>
+                    <p>2、会员在本站，依据本站所制定的规则和程序，和/或本站的技术，程序，按照会员所选择的密码和身份验证进行的登录，浏览，修改，下载，查询，咨询等，是准确，详尽，及时的；</p>
+                    <p>3、会员未能按照本站的要求和内容提供本站要求的必要信息的，本站有权认为该会员缺乏诚信态度，而有权中止本站所提供的服务，由此所导致的任何已经或可能发生的损失，本站概不负责，并保留对该会员进行追索的权利。
+                    </p>
+                </div>
+                <h5>六、会员资料的保留</h5>
+                <div>
+                    <p>1、会员在本站和/或本公司所填写的个人资料(包括但不限于注册信息，个人登录密码，会员名字等)，本站将予以完整保留。会员取得会员资格后应当妥善保存会员的用户名和密码。</p>
+                    <p>2、以下情况下，本站对会员资料的保存以及所导致的后果不承担任何责任：</p>
+                    <p>▪ 由于会员自身的疏忽，大意，过于自信等过错，而导致的会员资料的泄漏，传播；</p>
+                    <p>▪ 由于本站的硬件和软件的能力限制，所导致的会员资料的泄漏，流传和丧失；</p>
+                    <p>▪ 不能归咎于本站的客观情势，所导致的会员资料的纰漏，流传和丧失；</p>
+                    <p>▪ 因投诉而对会员资格的删除；</p>
+                    <p>▪ 不可抗力，政府行为所导致的会员资料的纰漏，流传和丧失。</p>
+                </div>
+                <h5>七、会员隐私权</h5>
+                <div>
+                    <p>会员在本站和/或本公司所填写的个人资料，本站允诺并保证，除非发生以下情况，不将其公布：</p>
+                    <p>▪ 按照本站制订的规则和程序，本站有充分的理由相信已经获得会员的授权；</p>
+                    <p>▪ 按照中华人民共和国的法律，法规，政策，条例，规定，实施细则，司法解释等规范性法律文件和法定程序，要求本站提供的；</p>
+                    <p>▪ 不能归咎于本站的客观情势，所导致的个人资料的公开；</p>
+                    <p>▪ 不可抗力，所导致的个人资料的公开；</p>
+                    <p>▪ 由于会员自身的疏忽，大意，过于自信等过错，而导致的个人资料的公开；</p>
+                    <p>▪ 由于本站的硬件和软件的能力限制，所导致的个人资料的公开；</p>
+                    <p>▪ 紧急情况下为维护会员个人和/或社会大众的隐私和/或安全的；</p>
+                    <p>▪ 为维护本站的所有权及相关权利的；</p>
+                    <p>▪ 本站有充分理由相信个人资料的公开，符合本站和用户利益要求的。</p>
+                </div>
+                <h5>八、担保责任的免除</h5>
+                <div>
+                    <p>本站不承担用户使用网络服务的风险。且对下列情况不作任何类型的担保：</p>
+                    <p>▪ 明确的网络服务；</p>
+                    <p>▪ 隐含的网络服务；</p>
+                    <p>▪ 服务的中断和对服务的及时性，安全性，包括语法在内的容错性要求；</p>
+                    <p>▪ 在本站上得到的任何商品购物服务或交易进程；</p>
+                    <p>▪ 其他网络服务的风险责任；</p>
+                    <p>▪ 发送或收到的信息的合法性。</p>
+                </div>
+                <h5>九、损害责任</h5>
+                <div>
+                    <p>本站对任何直接，间接，偶然，特殊及继起的损害不负责任，损害包括但不限于以下情形：</p>
+                    <p>▪ 不当使用网络服务的；</p>
+                    <p>▪ 在网上购买商品或进行同类型服务的；</p>
+                    <p>▪ 在网上进行交易的；</p>
+                    <p>▪ 非法使用网络服务或用户传送信息变动的；</p>
+                    <p>▪ 不可归咎于本站的客观情势变动和不可抗力引起的；</p>
+                    <p>▪ 限于目前可知的，和/或超出本站的硬件和软件能力的；</p>
+                    <p>▪ 用户自己的过错。</p>
+                </div>
+                <h5>十、服务的停止</h5>
+                <div>
+                    <p>本站有权判定用户的行为是否符合本站服务条款要求和精神，如果用户违背了服务条款的规定，本站有单方中断对其提供网络服务的权利。</p>
+                </div>
+                <h5>十一、用户管理</h5>
+                <div>
+                    <p>1、本站对用户发布及/或通过本网站传送的任何内容均承担责任。本站有权在审核会员资格后为其开通服务，并联合第三方执法机构监督用户使用过程可能或存在的风险。并可以在认为用户所发送邮件内容违反规定时随时停止其服务，并追究其责任。用户对服务的使用应符合国家法律法规的规定，且其行为必须符合下列要求：
+                    </p>
+                    <p>▪ 从中国境内向境外传输技术性资料时必须符合中国有关法规；</p>
+                    <p>▪ 使用网络服务不作非法用途；</p>
+                    <p>▪ 不干扰或混乱网络服务；</p>
+                    <p>▪ 遵守所有使用网络服务的网络协议，规定，程序和惯例；</p>
+                    <p>▪ 遵守其它法律及协议要求。</p>
+                    <p>2、用户须作出以下承诺：</p>
+                    <p>▪ 不传输任何非法的，骚扰性的，中伤他人的，辱骂性的，恐吓性的，伤害性的，庸俗的，淫秽等信息资料；</p>
+                    <p>▪ 不传输任何教唆他人犯罪的资料；</p>
+                    <p>▪ 不传输助长国内不利条件和涉及国家安全的资料；</p>
+                    <p>▪ 不传输任何不符合当地法律法规的资料；</p>
+                    <p>▪ 在未经许可的情况下不非法进入其它电脑系统。</p>
+                    <p>若用户的行为违反上述服务条款或用户承诺，本站将作出独立判断立即中止用户服务。用户需对自己在网上的行为承担一切法律责任。用户如有散布和传播反动，色情或其他违反国家法律信息的活动，本站的系统记录有可能作为用户违反法律的证据。
+                    </p>
+                </div>
+                <h5>十二、索赔范围</h5>
+                <div>
+                    <p>1、用户应同意保障和维护本站全体成员的利益。由于用户使用超出服务范围和/或违反服务条款而产生的律师费用，损害赔偿费用及其他相关费用，均由该用户负责支付。</p>
+                    <p>2、会员从账户开通之日起，即可通过 易回眸 电子邮件发送系统进行邮件发送。会员需保证邮件发送的内容不得有违中华人民共和国所有法律，如发生此状况，所有责任及连带的所有赔偿皆由会员来承担。</p>
+                </div>
+                <h5>十三、结束服务</h5>
+                <div>
+                    <p>1、用户或本站可随时根据实际情况中断一项或多项网络服务。</p>
+                    <p>2、本站可随时中断服务而不需对任何用户负责。</p>
+                    <p>3、用户对后来的条款修改有异议，或对本站的服务不满，可以行使如下权利：</p>
+                    <p>▪ 停止使用本站的网络服务。</p>
+                    <p>▪ 通告本站停止对该用户的服务。</p>
+                    <p>▪ 用户服务结束后，用户使用网络服务的权利马上中止。本站有义务向该用户正在向第三方传送任何未处理的信息或未完成的服务做出解释，需第三方负责并追究该用户责任。</p>
+                </div>
+                <h5>十四、通告</h5>
+                <div>
+                    <p>所有发给用户的通告都可通过重要页面的公告或电子邮件或常规的信件传送。服务条款的修改，服务变更，或其它重要事件的通告都会以此形式进行。并且本站相信所有用户在通告传送时都获得这一信息。</p>
+                </div>
+                <h5>十五、用户商业活动的责任承担</h5>
+                <div>
+                    <p>用户在他们发表的信息中加入宣传资料或参与广告策划，在本站的免费服务上展示他们的产品，任何这类促销方法，包括货物运输，付款，服务，商业条件，担保及与广告有关的描述都只与在相应的用户和广告销售商有关。本站没有义务为用户和这类广告销售负任何责任。
+                    </p>
+                </div>
+                <h5>十六、网络服务内容的所有权本站定义的网络服务内容包括：</h5>
+                <div>
+                    <p>▪ 文字，图片，图表，广告中的全部内容；</p>
+                    <p>▪ 电子邮件的全部内容；</p>
+                    <p>▪ 本站为用户提供的其他信息。</p>
+                    <p>▪ 所有上述内容受著作权法，商标法，专利法和其它相关法律法规的保护。所以，用户只能在本站和内容提供者授权下才能使用这些内容，且无权擅自复制，修改这些内容，或创造与内容有关的派生产品；</p>
+                    <p>▪ 本站所有文字作品的著作权归原文作者和本站共同享有，任何人需要转载本站的文章，必须征得原文作者或本站授权。</p>
+                </div>
+                <h5>十七、用户数据安全保障申明</h5>
+                <div>
+                    <p>本站保证用户所上传数据的安全性和保密性，并可由第三方权威机构提供监督，用户可安心使用本网站的通讯录邮件地址备份功能。</p>
+                </div>
+                <h5>十八、服务条款的修改</h5>
+                <div>
+                    <p>本站有权在必要时修改服务条款，本站服务条款一旦发生变动，将会在重要页面上提示修改内容。如果不同意所改动的内容，用户可以主动取消获得的网络服务。如果用户继续享用网络服务，则视为接受服务条款的变动。</p>
+                </div>
+                <h5>十九、法律</h5>
+                <div>
+                    <p>网络服务条款与中华人民共和国的法律法规相一致，用户和本站一致同意服从相关法律法规以及本站服务条款的规定，如本站服务条款与中华人民共和国法律相抵触，则依照法律法规的规定重新解释服务条款，但不影响其它条款的法律效力和影响。</p>
+                </div>
+                <h5>二十、纠纷处理</h5>
+                <div>
+                    <p>1、双方应持平等，友好，争取合理解决问题的态度；</p>
+                    <p>2、发生纠纷时首先以协商方式解决，如协商未果，任何一方均有权就该纠纷上发生的一切事项向仲裁委员会依照该会规则提起仲裁;如涉及到任何国外主体(包括香港、澳门、台湾的主体)，则应当就该纠纷上发生的一切事项向中国国际经济贸易仲裁委员会依照该会规则提起仲裁。<p>
+                    <p>安全性申明：本网站为中国互联网协会2010反垃圾邮件年会合作伙伴，绝对保障您所上传数据的安全性和保密性，敬请放心。</p>
+                </div>
+            </div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+
+</div>
+        <footer class="y-footer clearfix">
+    <div class="content">
+        <div class="intro">
+            <ul>
+                <li>
+                    <p class="title">
+                        <a href="/automation">营销自动化</a>
+                    </p>
+                    <p>
+                        <a href="/automation#Group">智能分组</a>
+                    </p>
+                    <p>
+                        <a href="/automation#Personal">个性化</a>
+                    </p>
+                    <p>
+                        <a href="/automation#Flow">工作流</a>
+                    </p>
+                    <p>
+                        <a href="/automation#Report">智能报表</a>
+                    </p>
+                    <p>
+                        <a href="/automation#Smart">web埋点</a>
+                    </p>
+                    <p>
+                        <a href="/automation#Marketing">营销互动</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="title">
+                        <a href="/email">邮件营销</a>
+                    </p>
+                    <p>
+                        <a href="/email#emailProduct">邮件产品</a>
+                    </p>
+                    <p>
+                        <a href="/email#emailInfo">服务质量</a>
+                    </p>
+                    <p>
+                        <a href="/email#emailSolution">解决方案</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="title">
+                        <a href="/note">短信营销</a>
+                    </p>
+                    <p>
+                        <a href="/note#note_product">短信产品</a>
+                    </p>
+                    <p>
+                        <a href="/note#noteInfo">服务质量</a>
+                    </p>
+                    <p>
+                        <a href="/note#note_solution">解决方案</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="title">
+                        <a href="/about">探索发现</a>
+                    </p>
+                    <p>
+                        <a href="/about/example">成功案例</a>
+                    </p>
+                    <p>
+                        <a href="/about/form">产品演示</a>
+                    </p>
+                    <p>
+                        <a href="/about/coming-soon">技术支持</a>
+                    </p>
+                    <p>
+                        <a href="/about">关于我们</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class=" footer_logo">
+            <a href="/">
+                <img src="/images/高光简图.png" />
+            </a>
+        </div>
+    </div>
+    <div class="text">
+        <p>
+            <span>版权所有</span>
+            <span>© </span>
+            <span>北京易回眸科技有限公司</span>
+            <span>&nbsp;&nbsp;</span>
+            <span>京ICP备16009175号-1</span>
+        </p>
+        <p>
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102002282" target="_blank">
+                <img src="/images/cockade.png" />
+                <span>京公网安备11010102002282</span>
+            </a>
+
+        </p>
+    </div>
+</footer>
+<script type="text/javascript" src=" /js/jquery.min.js"></script>
+<script type="text/javascript" src=" /js/bootstrap.min.js"></script>
+<script src="/js/jquery.scrollify.js"></script>
+<script type="text/javascript" src=" /js/y-index.js"></script>
+
+</body>
+</html>
+
+
+
+
+
